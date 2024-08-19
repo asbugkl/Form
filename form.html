@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anand Handicrafts Project Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, 
+        .form-group select, 
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #28a745;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container"> <br> <br> <br>
+    <h2>Anand Handicrafts Project Registration</h2>
+    <form action="/submit-handicrafts-registration" method="post">
+        <!-- Full Name -->
+        <div class="form-group">
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full_name" placeholder="Enter your full name" required>
+        </div>
+        
+        <!-- Email Address -->
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+        </div>
+        
+        <!-- Contact Number -->
+        <div class="form-group">
+            <label for="contact-number">Contact Number:</label>
+            <input type="tel" id="contact-number" name="contact_number" placeholder="Enter your contact number" required>
+        </div>
+        
+        <!-- Skill Level -->
+        <div class="form-group">
+            <label for="skill-level">Skill Level:</label>
+            <select id="skill-level" name="skill_level" required>
+                <option value="">Select your skill level</option>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+        </div>
+        
+        <!-- Interested Handicraft Type -->
+        <div class="form-group">
+            <label for="handicraft-type">Interested Handicraft Type:</label>
+            <input type="text" id="handicraft-type" name="handicraft_type" placeholder="e.g., pottery, weaving, etc." required>
+        </div>
+        
+        <!-- Experience Details -->
+        <div class="form-group">
+            <label for="experience-details">Experience Details (if any):</label>
+            <textarea id="experience-details" name="experience_details" placeholder="Describe your experience in handicrafts (if any)" rows="4"></textarea>
+        </div>
+        
+        <!-- Submit Button -->
+        <div class="form-group">
+            <button type="submit">Register</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
